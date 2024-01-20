@@ -13,7 +13,7 @@ export default function Home() {
   const listApisByCategory = Array.from(apisByCategory.keys());
 
   return (
-    <main className="max-w-screen-lg p-2 mx-auto bg-red-500">
+    <main className="max-w-screen-lg p-2 mx-auto">
       <h1 className="text-4xl font-semibold">Free API Directory</h1>
       <p>
         Free API Directory is a collection of free APIs for developers to use.

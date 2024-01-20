@@ -3,5 +3,10 @@ export type ApiType = {
   name: string;
   image: string;
   description: string;
-  category: string;
+  category?: string;
+  checks: {
+    cors: boolean;
+    https: boolean;
+    auth: string | "NO_AUTH" | "API_KEY" | "OAUTH";
+  };
 };
