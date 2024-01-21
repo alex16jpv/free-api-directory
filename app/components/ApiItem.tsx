@@ -53,7 +53,7 @@ export default function ApiItem({ data }: { data: ApiType }) {
           <Badge color={auth.color}>{auth.text}</Badge>
         </div>
       </div>
-      <p className="leading-4 line-clamp-3">{description}</p>
+      <p className="leading-5 line-clamp-3">{description}</p>
       <a href="#!">Go - {id}</a>
     </article>
   );
