@@ -5,10 +5,24 @@
     "image": "https://placehold.co/600x400",
     "description": "Rick and Morty is an American adult animated science fiction sitcom created by Justin Roiland and Dan Harmon for Cartoon Network's late-night programming block Adult Swim. The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but fretful grandson Morty Smith, who split their time between domestic life and interdimensional adventures.",
     "category": "ANIMATION",
+    "website": "https://rickandmortyapi.com/",
     "checks": {
       "cors": false,
       "https": true,
       "auth": "NO_AUTH"
+    }
+  },
+  {
+    "id": "fortnite",
+    "name": "Fortnite",
+    "image": "https://placehold.co/600x400",
+    "description": "Fortnite is an online video game developed by Epic Games and released in 2017. It is available in three distinct game mode versions that otherwise share the same general gameplay and game engine: Fortnite: Save the World, a cooperative hybrid-tower defense-shooter-survival game for up to four players to fight off zombie-like creatures and defend objects with traps and fortifications they can build; Fortnite Battle Royale, a free-to-play battle royale game where up to 100 players fight to be the last person standing; and Fortnite Creative, where players are given complete freedom to create worlds and battle arenas.",
+    "category": "GAMES",
+    "website": "https://fortniteapi.io/",
+    "checks": {
+      "cors": false,
+      "https": true,
+      "auth": "API_KEY"
     }
   }
 ]
