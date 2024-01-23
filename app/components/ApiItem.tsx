@@ -2,7 +2,7 @@ import { ApiType } from "../lib/types";
 import Badge from "./Badge";
 
 export default function ApiItem({ data }: { data: ApiType }) {
-  const { id, name, description } = data;
+  const { id, name, description, website } = data;
   const HTTPS = {
     ENABLE: {
       text: "https",
@@ -54,7 +54,22 @@ export default function ApiItem({ data }: { data: ApiType }) {
         </div>
       </div>
       <p className="leading-5 line-clamp-3">{description}</p>
-      <a href="#!">Go - {id}</a>
+
+      <div className="mt-4 mb-3">
+        <a
+          href={`apis/${id}`}
+          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        >
+          Example
+        </a>
+        <a
+          href={website}
+          target="_blank"
+          className="ml-2 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none text-gray-500 bg-gray-50 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:hover:text-white"
+        >
+          API Website
+        </a>
+      </div>
     </article>
   );
 }

@@ -4,6 +4,7 @@ export type ApiType = {
   image: string;
   description: string;
   category?: string;
+  website?: string;
   checks: {
     cors: boolean;
     https: boolean;
